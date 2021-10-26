@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@+id/navigation_albums">
+
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:name="com.example.musicapp.ui.view.navigation.albums.AlbumsFragment"
+        tools:layout="@layout/fragment_albums">
+        <action
+            android:id="@+id/action_navigation_albums_to_navigation_tracks"
+            app:destination="@id/navigation_tracks" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tracks"
+        android:name="com.example.musicapp.ui.view.navigation.albums.TracksFragment"
+        tools:layout="@layout/fragment_tracks" />
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.musicapp.ui.view.navigation.albums.SavedTracksFragment"
+        tools:layout="@layout/fragment_saved_tracks" />
+
+
+    </navigation>
+

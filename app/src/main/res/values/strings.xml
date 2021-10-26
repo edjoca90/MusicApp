@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_fav">Favorites</string>
+    <string name="title_playlist">Play Lists</string>
+    <string name="log_with_spotify">Log in with Spotify</string>
+    <string name="favorite">Favorite</string>
+    <string name="album_image">Album Image</string>
+</resources>
